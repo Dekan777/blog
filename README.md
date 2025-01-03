@@ -1,0 +1,1 @@
+--------- I used.prettierrc.json.txt
