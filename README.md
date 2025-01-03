@@ -1,1 +1,1 @@
-- I used.prettierrc.json.txt, Vite.
+- I used.prettierrc.json.txt, Vite, ESLint.
