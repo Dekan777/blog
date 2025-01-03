@@ -1,1 +1,1 @@
-- I used.prettierrc.json.txt
+- I used.prettierrc.json.txt, Vite.
