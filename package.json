@@ -13,6 +13,9 @@
   },
   "dependencies": {
     "eslint": "^9.17.0",
-    "modern-normalize": "^3.0.1"
+    "glob": "^11.0.0",
+    "modern-normalize": "^3.0.1",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
   }
 }
