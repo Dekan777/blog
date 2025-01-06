@@ -2,7 +2,7 @@
     font-family: 'Heedo';
     src: local('Heedo Bold'), local('Heedo-Bold'),
     url('../fonts/Heebo-Bold.ttf') format('ttf');
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -18,6 +18,6 @@
     font-family: 'Heedo';
     src: local('Heedo Regular'), local('Heedo-Regular'),
     url('../fonts/Heebo-Regular.ttf') format('ttf');
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
