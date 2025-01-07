@@ -1,6 +1,42 @@
-
 .hero-section {
-    padding-top: 120px ;
-    /* padding-bottom: 130px; */
-   
-  }
+  padding-top: 120px;
+  /* padding-bottom: 130px; */
+}
+
+.hero-title-h {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+}
+
+.hero-title-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+  text-align: left;
+}
+
+.download-resume-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6b6b; /* Цвет фона */
+  color: #ffffff; /* Цвет текста */
+  font-weight: bold;
+  text-align: center;
+  width: 208px; /* Ширина кнопки */
+  height: 47px; /* Высота кнопки */
+  border-radius: 2px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.download-resume-btn:hover {
+  background-color: #ff5a5a; /* Цвет фона при наведении */
+}
+
+.span-dowload {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29.38px;
+  text-align: left;
+}
