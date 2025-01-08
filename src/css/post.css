@@ -4,6 +4,7 @@
   width: calc(50% - 10px);
   box-sizing: border-box;
   color: #21243d;
+  background-color: white;
 }
 .post-title {
   font-size: 26px;
