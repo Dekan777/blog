@@ -11,7 +11,6 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
-
       rollupOptions: {
         input: globSync('./src/*.html'), 
         output: {
@@ -21,6 +20,7 @@ export default defineConfig(({ command }) => {
             }
           },
           entryFileNames: 'commonHelpers.js',
+          assetFileNames: '[name][extname]', // Без хэширования для изображений
         },
       },
       outDir: '../dist',
