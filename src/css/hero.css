@@ -19,19 +19,33 @@
 
 .download-resume-btn {
   display: inline-block;
-  
+  padding: 10px 20px;
   background-color: #ff6b6b; /* Цвет фона */
   color: #ffffff; /* Цвет текста */
   font-weight: bold;
   text-align: center;
   width: 208px; /* Ширина кнопки */
   height: 47px; /* Высота кнопки */
+  border-radius: 2px;
+  opacity: 0px;
+}
+
+/* for button */
+/* .download-resume-btn {
+  display: inline-block;
+  
+  background-color: #ff6b6b; 
+  color: #ffffff; 
+  font-weight: bold;
+  text-align: center;
+  width: 208px; 
+  height: 47px; 
   border-radius: 2px 0px 0px 0px;
   opacity: 0px;
   border-color: #ff6b6b;
   border: 0px;
-}
-
+} */
+ 
 .download-resume-btn:hover {
   background-color: #ff5a5a; /* Цвет фона при наведении */
 }
