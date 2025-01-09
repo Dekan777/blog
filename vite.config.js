@@ -30,22 +30,29 @@
 // });
 
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react'; // Импортируем плагин React
 import { sync as globSync } from 'glob';
 import FullReload from 'vite-plugin-full-reload';
 import injectHTML from 'vite-plugin-html-inject';
 
 export default defineConfig(({ command }) => {
     return {
+        plugins: [
+            react(), // Добавляем плагин React
+            injectHTML(),
+            FullReload(['./src/**/*.html']),
+        ],
         define: {
-            'globalThis': {}, // Исправлено на globalThis
+            'globalThis': {},
         },
         root: 'src',
+        base: "/blog/", // добавляем base для деплоя на github pages
         build: {
             sourcemap: true,
             rollupOptions: {
                 input: globSync('./src/*.html'),
                 output: {
-                    chunkFileNames: '[name]-[hash].js', // Исправлено на chunkFileNames и добавлено хеширование
+                    chunkFileNames: '[name]-[hash].js',
                     assetFileNames: '[name].[ext]',
                     manualChunks(id) {
                         if (id.includes('node_modules')) {
@@ -53,9 +60,8 @@ export default defineConfig(({ command }) => {
                         }
                     },
                 },
-                outDir: "../dist",
+                outDir: '../dist',
             },
         },
-        plugins: [injectHTML(), FullReload(['./src/**/*.html'])],
     };
 });
